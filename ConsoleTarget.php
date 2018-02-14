@@ -21,7 +21,7 @@ class ConsoleTarget extends Target
     /**
      * @var bool If true context message will be added to the end of output
      */
-    public $enableContextMassage = false;
+    public $enableContextMessage = false;
 
     public $displayCategory = false;
 
@@ -44,7 +44,7 @@ class ConsoleTarget extends Target
      */
     protected function getContextMessage()
     {
-        return $this->enableContextMassage ? parent::getContextMessage() : '';
+        return $this->enableContextMessage ? parent::getContextMessage() : '';
     }
 
     /**
